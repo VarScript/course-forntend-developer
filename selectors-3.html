@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            color: rgb(117, 19, 209);
+            font-size: 1000%;
+            text-align: center;
+            margin-top: 10%;
+        }
+        p::first-letter {
+            color: blueviolet;
+        }
+        p::before {
+            content:"✨";
+        }
+        p::after {
+            content: "💅";
+        }
+        p:hover {
+            color: rgb(194, 147, 255);
+        }
+        div p:nth-child(2){
+            color: rgb(255, 0, 221);
+        }
+        div p:nth-child(2):hover{
+            color: rgb(255, 134, 239);
+        }
+        ::placeholder {
+            color: blueviolet;
+            text-align-last: center;
+            
+        }
+        input {
+            color: rgb(117, 19, 209);
+            font-size: 500%;
+            margin-left: 22%;
+            margin-bottom: 20%;
+            border-radius: 10px;
+            border-color: rgba(137, 43, 226, 0);
+            background-color: rgba(204, 114, 245, 0.25);
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div>
+        <p>How are you?</p>
+        <p>How did it you?</p>
+        <p>How do you feel</p>
+    </div>
+    <input type="text" placeholder=Name>
+</body>
+</html>
